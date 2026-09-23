@@ -1,0 +1,43 @@
+{
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "score": "audio/score.wav",
+  "beats": [
+    {"scene": "title", "frames": 96, "marker": "title"},
+
+    {"scene": "display", "frames": 108,
+     "lines": ["The world should look", "a lot different"], "payoff": "than it is today."},
+
+    {"scene": "clip", "frames": 75, "src": "host-1", "name": "Host Name", "role": "Co-founder, Organisation"},
+    {"scene": "clip", "frames": 139, "src": "host-2", "name": "Host Name", "role": "Co-founder, Organisation"},
+
+    {"scene": "display", "frames": 54,
+     "eyebrow": "The cohort", "lines": ["Why people"], "payoff": "are here."},
+
+    {"scene": "clip", "frames": 147, "src": "p1", "name": "Participant Name", "role": "Startup operator · City", "marker": "montage"},
+    {"scene": "clip", "frames": 114, "src": "p2", "name": "Participant Name", "role": "Organisation"},
+    {"scene": "clip", "frames": 180, "src": "p3", "name": "Participant Name", "role": "30 years in education"},
+    {"scene": "clip", "frames": 66,  "src": "p4", "name": "Participant Name", "role": "Computer science student · Country"},
+    {"scene": "clip", "frames": 99,  "src": "p5", "name": "Participant Name", "role": "University · City"},
+    {"scene": "clip", "frames": 147, "src": "p6", "name": "Participant Name", "role": "Teacher · 10 years in the classroom"},
+    {"scene": "clip", "frames": 95,  "src": "p7", "name": "Participant Name", "role": "10 years in edtech · City"},
+
+    {"scene": "voice", "frames": 126, "src": "deal", "marker": "floor",
+     "lines": ["We set the floor."], "payoff": "You set the ceiling."},
+
+    {"scene": "stats", "frames": 150, "marker": "lift",
+     "eyebrow": "What the last cohort did",
+     "stats": [
+       {"value": 5, "suffix": "M+", "label": "organic views in 30 days"},
+       {"value": 1000, "suffix": "+", "label": "waitlist on a first product"},
+       {"value": 3, "suffix": "", "label": "paid pilots"}
+     ]},
+
+    {"scene": "voice", "frames": 163, "src": "ask",
+     "eyebrow": "The only requirement", "linesAt": 40,
+     "lines": ["Ship something new"], "payoff": "every two weeks."},
+
+    {"scene": "end", "frames": 96, "marker": "end"}
+  ]
+}

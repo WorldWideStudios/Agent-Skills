@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<style>body{margin:0}img{max-width:100%}</style>
+<title>Worldwide Video Style Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Audiowide&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+
+<style>
+/* Light system. White ground, black type. Nothing here inverts. */
+:root{
+  color-scheme:light;
+  --paper:#ffffff;
+  --ink:#0b0b0b;
+  --line:rgba(11,11,11,.12);
+  --line-soft:rgba(11,11,11,.07);
+  --amber:#fdc743;
+  --mint:#32fc98;
+  --royal:#2979ff;
+  --pink:#ff1b6b;
+  --purple:#8b2fff;
+  --radius:20px;
+  --pill:999px;
+  --f-display:"Space Grotesk",sans-serif;
+  --f-body:"Inter",-apple-system,BlinkMacSystemFont,sans-serif;
+  --f-accent:"Audiowide",sans-serif;
+}
+*{box-sizing:border-box}
+body{
+  background:var(--paper);color:var(--ink);
+  font-family:var(--f-body);font-size:15px;line-height:1.6;
+  margin:0;padding-block:0;padding-inline:20px;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1120px;margin:0 auto}
+p{margin:0}
+img{max-width:100%}
+code{
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em;
+  border:1px solid var(--line-soft);border-radius:5px;padding:1px 5px;white-space:nowrap;
+}
+h1,h2,h3{margin:0;font-family:var(--f-display);font-weight:700;text-transform:uppercase}
+h2{font-size:clamp(30px,4.6vw,46px);letter-spacing:-.04em;line-height:1}
+h3{font-size:16px;letter-spacing:-.02em;line-height:1.2}
+
+.eyebrow{
+  font-family:var(--f-body);font-size:12px;font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;
+}
+.lede{font-size:16px;line-height:1.55;max-width:58ch;margin-top:16px}
+.note{font-size:13px;line-height:1.5;margin-top:10px}
+.note b{font-weight:600}
+.dim{opacity:.55}
+
+/* ── masthead ─────────────────────────────────────────────────── */
+.mast{padding-block:60px 54px}
+.mast .logo{display:inline-block;margin-bottom:46px;font-family:var(--f-accent);font-size:22px;text-transform:uppercase;border:1px dashed var(--line);padding:12px 16px}
+.lock{font-family:var(--f-accent);font-size:clamp(34px,7.4vw,78px);line-height:1.02;letter-spacing:-.01em;text-transform:uppercase;text-align:left}
+.lock .a{color:var(--amber)}
+.mast .tag{
+  font-family:var(--f-body);font-size:12.5px;font-weight:500;letter-spacing:.12em;
+  text-transform:uppercase;margin-top:30px;
+}
+.mast .tag span{opacity:.5}
+
+/* ── sections ─────────────────────────────────────────────────── */
+section{padding-block:66px;border-top:1px solid var(--line)}
+.shead{margin-bottom:34px}
+.shead .eyebrow{display:block;margin-bottom:12px;opacity:.5}
+
+/* ── grids ────────────────────────────────────────────────────── */
+.g{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
+
+/* ── colour ───────────────────────────────────────────────────── */
+.sw .c{height:112px;border-radius:14px;display:block}
+.sw .n{font-family:var(--f-display);font-weight:700;text-transform:uppercase;letter-spacing:-.02em;font-size:15px;margin-top:13px}
+.sw .h{font-family:ui-monospace,Menlo,monospace;font-size:12px;margin-top:2px;opacity:.5}
+.sw .r{font-size:12.5px;line-height:1.45;margin-top:7px;opacity:.75}
+.modes{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:34px}
+.mode{border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.mode .b{padding:28px 24px;font-family:var(--f-display);font-weight:700;text-transform:uppercase;letter-spacing:-.03em;font-size:26px;line-height:1.1}
+.mode .l{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;padding:11px 24px;border-top:1px solid var(--line)}
+
+/* ── type specimens ───────────────────────────────────────────── */
+.face{padding-block:38px;border-top:1px solid var(--line-soft)}
+.face:first-of-type{border-top:0;padding-top:8px}
+.fhead{display:flex;flex-wrap:wrap;gap:6px 22px;align-items:baseline;margin-bottom:26px}
+.fhead .nm{font-family:var(--f-display);font-weight:700;text-transform:uppercase;letter-spacing:-.03em;font-size:21px}
+.fhead .sp{font-family:ui-monospace,Menlo,monospace;font-size:11.5px;opacity:.55;margin-right:auto}
+.fhead .ro{font-size:13px;opacity:.75;flex-basis:100%;max-width:60ch}
+.set-aw{font-family:var(--f-accent);letter-spacing:-.01em;text-transform:uppercase;line-height:1.04}
+.set-sg{font-family:var(--f-display);font-weight:700;letter-spacing:-.04em;text-transform:uppercase;line-height:1.02}
+.set-in{font-family:var(--f-body);line-height:1.5}
+.big{font-size:clamp(40px,9vw,96px)}
+.mid{font-size:clamp(24px,4.4vw,46px)}
+.chars{
+  margin-top:20px;font-size:clamp(13px,1.6vw,17px);letter-spacing:.06em;
+  opacity:.6;word-break:break-word;line-height:1.7;
+}
+.waterfall div{margin-top:12px}
+.waterfall .k{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;opacity:.45;letter-spacing:.04em}
+
+/* ── scale ramp ───────────────────────────────────────────────── */
+.ramp{container-type:inline-size;--u:.052083cqw;border:1px solid var(--line);border-radius:var(--radius);padding:26px 28px 30px;overflow:hidden}
+.ramp .row{display:flex;align-items:baseline;gap:20px;padding-block:7px;border-bottom:1px solid var(--line-soft)}
+.ramp .row:last-child{border-bottom:0}
+.ramp .k{flex:none;width:104px;font-family:ui-monospace,Menlo,monospace;font-size:11px;opacity:.5}
+.ramp .v{overflow:hidden;white-space:nowrap;min-width:0}
+
+/* ── frame ────────────────────────────────────────────────────── */
+.frame{
+  container-type:inline-size;background:#fff;color:#0b0b0b;
+  border:1px solid var(--line);border-radius:12px;position:relative;
+  overflow:hidden;max-width:100%;
+}
+.frame.h{aspect-ratio:16/9;--u:.0520833cqw}
+.frame.v{aspect-ratio:9/16;--u:.0925926cqw}
+.fi{position:absolute;inset:0}
+.pad{padding:calc(72*var(--u))}
+.fill{display:flex;flex-direction:column;justify-content:center;height:100%}
+.mid-x{align-items:center}
+.rj{text-align:right}
+.lockup{display:flex;flex-direction:column;align-items:flex-start;text-align:left} /* one block: logo, lines, domain share a LEFT edge; the block itself is centred on the card by .mid-x */
+
+.vD1{font-family:var(--f-accent);font-size:calc(150*var(--u));line-height:1.08;letter-spacing:-.01em}
+.vD2{font-family:var(--f-accent);font-size:calc(112*var(--u));line-height:1.16;letter-spacing:-.01em;text-transform:uppercase}
+.vD3{font-family:var(--f-display);font-weight:700;font-size:calc(84*var(--u));line-height:1.1;letter-spacing:-.04em;text-transform:uppercase}
+.vD4{font-family:var(--f-display);font-weight:700;font-size:calc(64*var(--u));line-height:1.16;letter-spacing:-.03em;text-transform:uppercase}
+.vD5{font-family:var(--f-display);font-weight:700;font-size:calc(48*var(--u));line-height:1.22;letter-spacing:-.03em;text-transform:uppercase}
+.vD6{font-family:var(--f-display);font-weight:700;font-size:calc(34*var(--u));line-height:1.2;letter-spacing:-.02em;text-transform:uppercase}
+.vD7{font-family:var(--f-body);font-weight:600;font-size:calc(24*var(--u));line-height:1.4;letter-spacing:.14em;text-transform:uppercase}
+.amb{color:#fdc743}
+.vlogo{width:calc(300*var(--u));display:block;font-family:var(--f-accent);font-size:calc(38*var(--u));line-height:1;letter-spacing:-.01em;text-transform:uppercase;border:1px dashed var(--line);padding:calc(18*var(--u)) calc(14*var(--u))}
+.lt{display:inline-flex;background:#fff;border-radius:calc(16*var(--u));overflow:hidden;box-shadow:0 calc(14*var(--u)) calc(40*var(--u)) rgba(0,0,0,.26)}
+.lt .e{width:calc(10*var(--u));background:#fdc743;flex:none}
+.lt .i{padding:calc(16*var(--u)) calc(28*var(--u))}
+.srow{display:flex;align-items:baseline;gap:calc(28*var(--u))}
+.srow .n{min-width:calc(340*var(--u))}
+.cap{font-size:12.5px;line-height:1.5;margin-top:11px}
+.cap b{font-weight:600}
+.cap .t{opacity:.62}
+
+/* ── corrections ──────────────────────────────────────────────── */
+.card{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff}
+.card img{display:block;width:100%;background:#fff;border-bottom:1px solid var(--line-soft)}
+.card .b{padding:14px 16px 16px}
+.tagx,.tagy{
+  display:inline-flex;font-size:10.5px;font-weight:600;letter-spacing:.1em;
+  text-transform:uppercase;border-radius:var(--pill);padding:4px 12px;margin-bottom:8px;
+}
+.tagx{background:var(--ink);color:#fff}
+.tagy{background:var(--amber);color:var(--ink)}
+.card .b .src{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;opacity:.5;margin-bottom:6px}
+.card .b p{font-size:12.5px;line-height:1.5;opacity:.8}
+.card .b b{font-weight:600;opacity:1}
+.pair{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.four{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+
+/* ── never ────────────────────────────────────────────────────── */
+.never{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(215px,1fr))}
+.nv svg{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:10px;background:#fff}
+.nv .t{font-family:var(--f-display);font-weight:700;text-transform:uppercase;letter-spacing:-.02em;font-size:14px;margin-top:11px;line-height:1.2}
+.nv .d{font-size:12px;line-height:1.45;margin-top:4px;opacity:.7}
+
+/* ── tables ───────────────────────────────────────────────────── */
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius)}
+table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:540px}
+th,td{text-align:left;padding:12px 18px;vertical-align:top}
+thead th{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;white-space:nowrap;opacity:.5}
+tbody td{border-top:1px solid var(--line-soft)}
+td b{font-weight:600}
+.dimrow td{opacity:.6}
+
+/* ── rules of craft ───────────────────────────────────────────── */
+.craft{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.craft h3{margin-bottom:12px}
+.craft ul{margin:0;padding-left:18px;font-size:13.5px;line-height:1.55}
+.craft li{margin-top:7px}
+.craft li b{font-weight:600}
+
+footer{padding-block:44px 90px;border-top:1px solid var(--line);font-size:12px;line-height:1.6;opacity:.6}
+</style>
+</head>
+<body>
+
+
+<div class="wrap">
+
+<!-- ══════════════════════════════════════════════ MASTHEAD -->
+<header class="mast">
+  <div class="logo">Logo · Worldwide Studios</div>
+  <div class="lock">AI FOR<br><span class="a">EDUCATION</span><br>FELLOWSHIP</div>
+  <div class="tag">Video style guide <span>·</span> v2.4 <span>·</span> worked example <span>·</span> tokens from worldwide-studios.org</div>
+</header>
+
+<!-- ══════════════════════════════════════════════ 01 COLOUR -->
+<section>
+  <div class="shead">
+    <span class="eyebrow">01</span>
+    <h2>Colour</h2>
+    <p class="lede">The system is light. <b>White ground, black type</b> — every card, every frame, both aspect ratios. Dark is a deliberate exception, never a default or a fallback.</p>
+  </div>
+
+  <div class="g g2" style="max-width:640px">
+    <div class="sw"><span class="c" style="background:#ffffff;border:1px solid var(--line)"></span>
+      <div class="n">Paper</div><div class="h">#ffffff</div>
+      <div class="r">The ground. Flat — no grid, no glow, no texture, no tint.</div></div>
+    <div class="sw"><span class="c" style="background:#0b0b0b"></span>
+      <div class="n">Ink</div><div class="h">#0b0b0b</div>
+      <div class="r">All type, every size. Not <code>#000</code>.</div></div>
+  </div>
+
+  <h3 style="margin-top:44px">Accents</h3>
+  <p class="note" style="max-width:58ch">One accent in a frame, carried as <b>type colour on a single line</b>. Amber belongs to this fellowship; mint belongs to the org. The rest are for sibling programmes and never mix.</p>
+  <div class="g g3" style="margin-top:20px">
+    <div class="sw"><span class="c" style="background:#fdc743"></span>
+      <div class="n">Amber</div><div class="h">#fdc743</div><div class="r">AI for Education. The only yellow — a fully saturated one breaks up on white under h264.</div></div>
+    <div class="sw"><span class="c" style="background:#32fc98"></span>
+      <div class="n">Mint</div><div class="h">#32fc98</div><div class="r">Worldwide Studios.</div></div>
+    <div class="sw"><span class="c" style="background:#2979ff"></span>
+      <div class="n">Royal</div><div class="h">#2979ff</div><div class="r">Cool accent.</div></div>
+    <div class="sw"><span class="c" style="background:#ff1b6b"></span>
+      <div class="n">Pink</div><div class="h">#ff1b6b</div><div class="r">High-energy accent.</div></div>
+    <div class="sw"><span class="c" style="background:#8b2fff"></span>
+      <div class="n">Purple</div><div class="h">#8b2fff</div><div class="r">High-energy accent.</div></div>
+  </div>
+
+  <div class="modes">
+    <div class="mode">
+      <div class="b" style="background:#fff;color:#0b0b0b">We set the floor.<br><span style="color:#fdc743">You set the ceiling.</span></div>
+      <div class="l">Default · always</div>
+    </div>
+    <div class="mode">
+      <div class="b" style="background:#0b0b0b;color:#fff">We set the floor.<br><span style="color:#fdc743">You set the ceiling.</span></div>
+      <div class="l">Dark · by decision only</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════ 02 TYPE -->
+<section>
+  <div class="shead">
+    <span class="eyebrow">02</span>
+    <h2>Type</h2>
+    <p class="lede">Three faces. Each one stops where the next begins.</p>
+  </div>
+
+  <div class="face">
+    <div class="fhead">
+      <span class="nm">Audiowide</span>
+      <span class="sp">400 · −0.01em · uppercase</span>
+      <span class="ro">The wordmark face. Lockups and the one hero number — nothing smaller, never a name, never a label, never a sentence.</span>
+    </div>
+    <div class="set-aw big">AI FOR <span style="color:var(--amber)">EDUCATION</span></div>
+    <div class="waterfall">
+      <div><span class="k">D1 · 150</span><div class="set-aw" style="font-size:clamp(34px,6.6vw,70px)">5M · 1,000+ · 100</div></div>
+      <div><span class="k">D2 · 112</span><div class="set-aw" style="font-size:clamp(26px,4.8vw,52px)">Fellowship</div></div>
+    </div>
+    <p class="chars">ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789 &amp; · + —</p>
+  </div>
+
+  <div class="face">
+    <div class="fhead">
+      <span class="nm">Space Grotesk</span>
+      <span class="sp">700 · −0.03/−0.04em · uppercase</span>
+      <span class="ro">Carries the argument. Display lines, payoffs, stat labels, speaker names. Tracking tightens as it grows, the way the site sets it.</span>
+    </div>
+    <div class="set-sg mid">Ship something new<br><span style="color:var(--amber)">every two weeks.</span></div>
+    <div class="waterfall">
+      <div><span class="k">D3 · 84 · −0.04em</span><div class="set-sg" style="font-size:clamp(22px,3.6vw,38px)">The gap is huge.</div></div>
+      <div><span class="k">D4 · 64 · −0.03em</span><div class="set-sg" style="font-size:clamp(18px,2.8vw,29px)">Second career.</div></div>
+      <div><span class="k">D6 · 34 · −0.02em</span><div class="set-sg" style="font-size:clamp(13px,1.5vw,16px)">Full Name</div></div>
+    </div>
+    <p class="chars">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789</p>
+  </div>
+
+  <div class="face">
+    <div class="fhead">
+      <span class="nm">Inter</span>
+      <span class="sp">600 · +0.14em labels · 0 captions</span>
+      <span class="ro">Two jobs. Labels — eyebrows, roles, the URL — set uppercase and tracked. Verbatim speech set sentence case and untracked. Nothing in between.</span>
+    </div>
+    <div style="font-family:var(--f-body);font-weight:600;font-size:clamp(13px,1.7vw,18px);letter-spacing:.14em;text-transform:uppercase;line-height:1.7">
+      The only requirement<br>Role · credential line<br>worldwide-studios.org
+    </div>
+    <div class="set-in" style="font-weight:600;font-size:clamp(18px,2.6vw,28px);margin-top:26px;max-width:22ch">
+      and that's why I <span style="color:#b8860b">joined</span> this cohort
+    </div>
+    <p class="note" style="max-width:52ch">Captions are word-synced: the spoken word takes the accent as <b>colour</b>. Constant padding on every word so the line never reflows.</p>
+    <p class="chars">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789</p>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════ 03 SCALE -->
+<section>
+  <div class="shead">
+    <span class="eyebrow">03</span>
+    <h2>Scale</h2>
+    <p class="lede">1920×1080 and 1080×1920 share a <b>1080px short edge</b>, so one ramp is correct in both and a card lifts between formats untouched.</p>
+  </div>
+
+  <div class="ramp">
+    <div class="row"><span class="k">D1 · 150 · AW</span><span class="v vD1">5M</span></div>
+    <div class="row"><span class="k">D2 · 112 · AW</span><span class="v vD2">Fellowship</span></div>
+    <div class="row"><span class="k">D3 · 84 · SG</span><span class="v vD3">Every two weeks.</span></div>
+    <div class="row"><span class="k">D4 · 64 · SG</span><span class="v vD4">Second career.</span></div>
+    <div class="row"><span class="k">D5 · 48 · SG</span><span class="v vD5">Organic views in 30 days</span></div>
+    <div class="row"><span class="k">C · 46 · Inter</span><span class="v" style="font-family:var(--f-body);font-weight:600;font-size:calc(46*var(--u));line-height:1.42">This is why I'm here.</span></div>
+    <div class="row"><span class="k">D6 · 34 · SG</span><span class="v vD6">Full Name</span></div>
+    <div class="row"><span class="k">D7 · 24 · Inter</span><span class="v vD7">30 years in education</span></div>
+  </div>
+
+  <div class="g g3" style="margin-top:18px">
+    <p class="note"><b>Floor is 24.</b> Nothing sets smaller — roles at 18 did not survive a phone screen.</p>
+    <p class="note"><b>Margin is 72</b> on every edge, both formats.</p>
+    <p class="note"><b>Two steps a card</b>, three at most, never adjacent ones.</p>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════ 04 CARDS -->
+<section>
+  <div class="shead">
+    <span class="eyebrow">04</span>
+    <h2>Cards</h2>
+  </div>
+
+  <div class="g g2">
+    <div>
+      <div class="frame h"><div class="fi pad fill mid-x">
+        <div class="lockup"><div class="vlogo" style="margin-bottom:calc(46*var(--u))">Logo</div>
+        <div>
+          <div class="vD2">AI FOR</div>
+          <div class="vD2 amb">EDUCATION</div>
+          <div class="vD2">FELLOWSHIP</div>
+        </div></div>
+      </div></div>
+      <p class="cap"><b>Title.</b> <span class="t">Lockup, then three lines — the site's own hero. Amber on EDUCATION alone. <b>Logo and lines are one block, flush left on a shared edge</b> — the logo is not centred over them. That whole block centres on the card, both axes. No rule, no date strip.</span></p>
+    </div>
+
+    <div>
+      <div class="frame h"><div class="fi pad fill mid-x">
+        <div class="lockup"><div class="vlogo" style="margin-bottom:calc(38*var(--u))">Logo</div>
+        <div>
+          <div class="vD2">AI FOR</div>
+          <div class="vD2 amb">EDUCATION</div>
+          <div class="vD2">FELLOWSHIP</div>
+          <div class="vD7" style="letter-spacing:.06em;text-transform:none;margin-top:calc(28*var(--u))">worldwide-studios.org</div>
+        </div></div>
+      </div></div>
+      <p class="cap"><b>End.</b> <span class="t">The same left-aligned block, closing the film, plus the domain flush left under it. No headline, no CTA, no wordmark on its own.</span></p>
+    </div>
+
+    <div>
+      <div class="frame h"><div class="fi pad fill">
+        <div class="vD7" style="margin-bottom:calc(22*var(--u))">The only requirement</div>
+        <div class="vD3">Ship something new</div>
+        <div class="vD3 amb">every two weeks.</div>
+      </div></div>
+      <p class="cap"><b>Display.</b> <span class="t">Curated words, left-aligned, word-synced. One amber payoff line, always last.</span></p>
+    </div>
+
+    <div>
+      <div class="frame h"><div class="fi pad fill">
+        <div class="vD7" style="margin-bottom:calc(20*var(--u))">What the last cohort did</div>
+        <div class="srow"><span class="vD1 n">5M+</span><span class="vD5">organic views in 30 days</span></div>
+        <div class="srow"><span class="vD1 n">1,000+</span><span class="vD5">waitlist on a first product</span></div>
+        <div class="srow"><span class="vD1 n">3</span><span class="vD5">paid pilots</span></div>
+      </div></div>
+      <p class="cap"><b>Stat.</b> <span class="t">Left-stacked, all ink, all landing on the same frame. Centred columns make "5M" read smaller than "1,000" at the same size.</span></p>
+    </div>
+
+    <div>
+      <div class="frame h"><div class="fi" style="background:linear-gradient(150deg,#c4beb1,#948d81)"></div>
+        <div class="fi pad" style="display:flex;align-items:flex-end">
+          <div class="lt"><span class="e"></span><span class="i">
+            <div class="vD6">Full Name</div>
+            <div class="vD7" style="margin-top:calc(5*var(--u))">30 years in education</div>
+          </span></div>
+        </div></div>
+      <p class="cap"><b>Lower third.</b> <span class="t">White chip over footage; plain type when it sits on paper. Name D6, role D7, full names always.</span></p>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ══════════════════════════════════════════════ 06 NEVER -->
+<section>
+  <div class="shead">
+    <span class="eyebrow">05</span>
+    <h2>Never</h2>
+  </div>
+  <div class="never">
+
+    <div class="nv">
+      <svg viewBox="0 0 160 90" role="img" aria-label="Amber block behind a word">
+        <rect x="26" y="38" width="30" height="9" rx="2" fill="#0b0b0b"/>
+        <rect x="60" y="34" width="38" height="17" rx="3" fill="#fdc743"/>
+        <rect x="64" y="38" width="30" height="9" rx="2" fill="#0b0b0b"/>
+        <rect x="102" y="38" width="22" height="9" rx="2" fill="#0b0b0b"/>
+      </svg>
+      <div class="t">Amber behind type</div>
+      <div class="d">Emphasis is a colour change, not a fill.</div>
+    </div>
+
+    <div class="nv">
+      <svg viewBox="0 0 160 90" role="img" aria-label="Two accent colours in one frame">
+        <rect x="26" y="30" width="6" height="14" fill="#fdc743"/>
+        <rect x="40" y="32" width="52" height="10" rx="2" fill="#0b0b0b"/>
+        <rect x="26" y="52" width="6" height="14" fill="#2979ff"/>
+        <rect x="40" y="54" width="66" height="10" rx="2" fill="#0b0b0b"/>
+      </svg>
+      <div class="t">Two accents at once</div>
+      <div class="d">One accent per frame. Colour that encodes nothing is noise.</div>
+    </div>
+
+    <div class="nv">
+      <svg viewBox="0 0 160 90" role="img" aria-label="Rules, dividers and a progress bar">
+        <rect x="26" y="30" width="80" height="9" rx="2" fill="#0b0b0b"/>
+        <rect x="26" y="46" width="108" height="2" fill="#fdc743"/>
+        <rect x="26" y="56" width="60" height="7" rx="2" fill="#0b0b0b" opacity=".45"/>
+        <rect x="0" y="86" width="96" height="4" fill="#fdc743"/>
+      </svg>
+      <div class="t">Rules and bars</div>
+      <div class="d">No dividers, no underlines, no progress bar.</div>
+    </div>
+
+    <div class="nv">
+      <svg viewBox="0 0 160 90" role="img" aria-label="Numbered section eyebrow">
+        <text x="26" y="34" font-family="Inter,sans-serif" font-size="8" font-weight="600" letter-spacing="1.4" fill="#0b0b0b" opacity=".5">01 · THE FELLOWSHIP</text>
+        <rect x="26" y="44" width="86" height="12" rx="2" fill="#0b0b0b"/>
+        <rect x="26" y="60" width="54" height="12" rx="2" fill="#0b0b0b"/>
+      </svg>
+      <div class="t">Numbered sections</div>
+      <div class="d">A site pattern. Film has no navigation to anchor it.</div>
+    </div>
+
+    <div class="nv">
+      <svg viewBox="0 0 160 90" role="img" aria-label="Audiowide set small as a name">
+        <text x="26" y="42" font-family="Audiowide,sans-serif" font-size="11" fill="#0b0b0b">SPEAKER NAME</text>
+        <text x="26" y="56" font-family="Audiowide,sans-serif" font-size="7" fill="#0b0b0b" opacity=".55">CO-FOUNDER</text>
+      </svg>
+      <div class="t">Audiowide set small</div>
+      <div class="d">Never a name, role, label or URL.</div>
+    </div>
+
+    <div class="nv">
+      <svg viewBox="0 0 160 90" role="img" aria-label="Audiowide letter-spaced wide">
+        <text x="80" y="50" text-anchor="middle" font-family="Audiowide,sans-serif" font-size="15" letter-spacing="7" fill="#0b0b0b">WORLD</text>
+      </svg>
+      <div class="t">Stretched Audiowide</div>
+      <div class="d">The site's <code>lengthAdjust</code> stays on the site.</div>
+    </div>
+
+    <div class="nv">
+      <svg viewBox="0 0 160 90" role="img" aria-label="Portrait clip on black side bars">
+        <rect x="0" y="0" width="52" height="90" fill="#0b0b0b"/>
+        <rect x="108" y="0" width="52" height="90" fill="#0b0b0b"/>
+        <rect x="52" y="0" width="56" height="90" fill="#cfc9be"/>
+        <circle cx="80" cy="38" r="13" fill="#a8a196"/>
+        <path d="M60 78a20 20 0 0140 0z" fill="#a8a196"/>
+      </svg>
+      <div class="t">Black pillarbox</div>
+      <div class="d">Pillarbox on paper, or fill the frame.</div>
+    </div>
+
+    <div class="nv">
+      <svg viewBox="0 0 160 90" role="img" aria-label="A type plate laid over two faces">
+        <rect x="14" y="10" width="62" height="70" rx="4" fill="#cfc9be"/>
+        <rect x="84" y="10" width="62" height="70" rx="4" fill="#bdb6aa"/>
+        <circle cx="45" cy="34" r="12" fill="#a8a196"/><circle cx="115" cy="34" r="12" fill="#999287"/>
+        <rect x="26" y="36" width="108" height="26" rx="5" fill="#fff"/>
+        <rect x="38" y="45" width="84" height="9" rx="2" fill="#0b0b0b"/>
+      </svg>
+      <div class="t">Type over faces</div>
+      <div class="d">Give the line its own card.</div>
+    </div>
+
+    <div class="nv">
+      <svg viewBox="0 0 160 90" role="img" aria-label="A baked-in meeting name label">
+        <rect x="14" y="10" width="132" height="70" rx="4" fill="#cfc9be"/>
+        <circle cx="80" cy="38" r="14" fill="#a8a196"/>
+        <path d="M58 80a22 22 0 0144 0z" fill="#a8a196"/>
+        <rect x="22" y="62" width="54" height="12" rx="3" fill="#0b0b0b" opacity=".75"/>
+        <text x="27" y="71" font-family="Inter,sans-serif" font-size="7" fill="#fff">host name</text>
+      </svg>
+      <div class="t">Baked-in Meet labels</div>
+      <div class="d">Crop them out or cover them.</div>
+    </div>
+
+    <div class="nv">
+      <svg viewBox="0 0 160 90" role="img" aria-label="A dotted grid background behind type">
+        <g fill="#0b0b0b" opacity=".22">
+          <circle cx="20" cy="20" r="1.6"/><circle cx="44" cy="20" r="1.6"/><circle cx="68" cy="20" r="1.6"/><circle cx="92" cy="20" r="1.6"/><circle cx="116" cy="20" r="1.6"/><circle cx="140" cy="20" r="1.6"/>
+          <circle cx="20" cy="45" r="1.6"/><circle cx="44" cy="45" r="1.6"/><circle cx="68" cy="45" r="1.6"/><circle cx="92" cy="45" r="1.6"/><circle cx="116" cy="45" r="1.6"/><circle cx="140" cy="45" r="1.6"/>
+          <circle cx="20" cy="70" r="1.6"/><circle cx="44" cy="70" r="1.6"/><circle cx="68" cy="70" r="1.6"/><circle cx="92" cy="70" r="1.6"/><circle cx="116" cy="70" r="1.6"/><circle cx="140" cy="70" r="1.6"/>
+        </g>
+        <rect x="34" y="40" width="92" height="12" rx="2" fill="#0b0b0b"/>
+      </svg>
+      <div class="t">Grid, glow, texture</div>
+      <div class="d">The ground is flat paper.</div>
+    </div>
+
+    <div class="nv">
+      <svg viewBox="0 0 160 90" role="img" aria-label="A waveform cut through the final word">
+        <g fill="#0b0b0b" opacity=".3">
+          <rect x="20" y="38" width="3" height="14" rx="1.5"/><rect x="27" y="31" width="3" height="28" rx="1.5"/>
+          <rect x="34" y="26" width="3" height="38" rx="1.5"/><rect x="41" y="34" width="3" height="22" rx="1.5"/>
+          <rect x="48" y="29" width="3" height="32" rx="1.5"/><rect x="55" y="24" width="3" height="42" rx="1.5"/>
+          <rect x="62" y="33" width="3" height="24" rx="1.5"/><rect x="69" y="28" width="3" height="34" rx="1.5"/>
+        </g>
+        <g fill="#0b0b0b">
+          <rect x="76" y="25" width="3" height="40" rx="1.5"/><rect x="83" y="30" width="3" height="30" rx="1.5"/>
+          <rect x="90" y="22" width="3" height="46" rx="1.5"/>
+        </g>
+        <rect x="97" y="8" width="2" height="74" fill="#fdc743"/>
+        <text x="105" y="48" font-family="Inter,sans-serif" font-size="8" font-weight="600" fill="#0b0b0b" opacity=".5">cut</text>
+      </svg>
+      <div class="t">Clipping the last word</div>
+      <div class="d">"a lot of opport—". Cut after the final consonant, not on it.</div>
+    </div>
+
+    <div class="nv">
+      <svg viewBox="0 0 160 90" role="img" aria-label="A trailing breath left at the end of a clip">
+        <g fill="#0b0b0b">
+          <rect x="20" y="30" width="3" height="30" rx="1.5"/><rect x="27" y="24" width="3" height="42" rx="1.5"/>
+          <rect x="34" y="33" width="3" height="24" rx="1.5"/><rect x="41" y="27" width="3" height="36" rx="1.5"/>
+          <rect x="48" y="31" width="3" height="28" rx="1.5"/>
+        </g>
+        <rect x="57" y="8" width="2" height="74" fill="#fdc743"/>
+        <g fill="#0b0b0b" opacity=".22">
+          <rect x="66" y="42" width="3" height="6" rx="1.5"/><rect x="73" y="41" width="3" height="8" rx="1.5"/>
+          <rect x="80" y="43" width="3" height="4" rx="1.5"/><rect x="87" y="42" width="3" height="6" rx="1.5"/>
+          <rect x="94" y="41" width="3" height="8" rx="1.5"/><rect x="101" y="43" width="3" height="5" rx="1.5"/>
+        </g>
+        <text x="110" y="48" font-family="Inter,sans-serif" font-size="8" font-weight="600" fill="#0b0b0b" opacity=".5">breath</text>
+      </svg>
+      <div class="t">Trailing breath</div>
+      <div class="d">The tail after the last word is not silence. Trim it.</div>
+    </div>
+
+    <div class="nv">
+      <svg viewBox="0 0 160 90" role="img" aria-label="The word launch struck through, replaced by summary">
+        <text x="80" y="42" text-anchor="middle" font-family="Space Grotesk,sans-serif" font-weight="700" font-size="18" letter-spacing="-.5" fill="#0b0b0b" opacity=".35">LAUNCH</text>
+        <rect x="42" y="35" width="76" height="2.5" fill="#fdc743"/>
+        <text x="80" y="66" text-anchor="middle" font-family="Space Grotesk,sans-serif" font-weight="700" font-size="18" letter-spacing="-.5" fill="#0b0b0b">SUMMARY</text>
+      </svg>
+      <div class="t">"Launch video"</div>
+      <div class="d">These are summary videos — in titles, files, folders and copy.</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════ 07 MOTION, PICTURE, SOUND -->
+<section>
+  <div class="shead">
+    <span class="eyebrow">06</span>
+    <h2>Motion, picture, sound</h2>
+  </div>
+
+  <div class="craft">
+    <div>
+      <h3>Motion</h3>
+      <ul>
+        <li><b><code>cubic-bezier(.16, 1, .3, 1)</code></b> on everything — the site's own curve. Fast in, long settle, no bounce.</li>
+        <li>Entrances ~0.45s. Cards wipe left to right so a speaker change is visible.</li>
+        <li><b>Nothing is still animating when the card is meant to be read.</b></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Picture</h3>
+      <ul>
+        <li>Cut on <b>detected silences</b>, never on SRT cue boundaries — cues run through sentence ends and clip words.</li>
+        <li>People appear in their <b>full source frame</b>. Cropping in cuts heads and shoulders.</li>
+        <li>Centre every card on one axis so consecutive beats don't jump.</li>
+        <li>Meeting spotlight view lags the speaker switch (<b>1s+</b>) — grab the frame before trusting a timestamp.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Sound</h3>
+      <ul>
+        <li>Find boundaries with <b><code>silencedetect=n=-34dB:d=0.16</code></b>, then confirm each one by cutting it and re-transcribing for <b>content</b>.</li>
+        <li>Leave about <b>120ms of air before the first word</b> and <b>180ms after the last consonant</b>. Less clips the word; more reads as a stall.</li>
+        <li><b>Never cut on a consonant.</b> "a lot of opport—", "every two wee—" all shipped and all had to be re-cut.</li>
+        <li><b>Trim the trailing breath.</b> The tail after a line is audible even when the meter looks flat.</li>
+        <li><b>A fade does not hide the next phrase.</b> If a following sentence leaks in, shorten the clip — don't ramp the volume.</li>
+        <li>Start a quote on the phrase that <b>introduces</b> it, not on the quote itself, or the line lands as a fragment.</li>
+        <li>Every beat needs a <b>verbal hand-off</b>. A freeze with no audio bridge reads as lag, not as a pause.</li>
+        <li>Whisper word timings <b>shift with the clip window</b>. Cut to final length first, read cues off that exact file, bias ~60ms early.</li>
+        <li>Master at <b><code>--crf=14</code></b>, around <b>−14 LUFS</b>, with a CRF-23 <code>+faststart</code> web copy alongside.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<footer>
+  Worked example from the <b>video-brand-guide</b> skill. Tokens read from <b>worldwide-studios.org</b> (site CSS custom properties and the programme page's overrides). Where the site and the approved cuts disagree, the cuts win. Project-specific sections — frame audits of each cut, the roster, the per-file work list — are omitted; add your own.
+</footer>
+
+</div>
+
+</body>
+</html>

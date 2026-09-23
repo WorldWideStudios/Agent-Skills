@@ -1,0 +1,23 @@
+{
+  "name": "summary-video",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "remotion studio",
+    "music": "python3 make-music.py",
+    "draft": "remotion render SummaryFilm out/draft.mp4 --scale=0.5",
+    "render": "remotion render SummaryFilm out/master.mp4 --crf=14",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.404",
+    "@remotion/google-fonts": "4.0.404",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "remotion": "4.0.404"
+  },
+  "devDependencies": {
+    "@types/react": "19.0.0",
+    "typescript": "5.8.3"
+  }
+}
