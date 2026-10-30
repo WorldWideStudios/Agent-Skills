@@ -1,0 +1,24 @@
+[
+  {
+    "id": "camus",
+    "side": "A",
+    "commons": "Albert Camus, gagnant de prix Nobel, portrait en buste, posé au bureau, faisant face à gauche, cigarette de tabagisme.jpg",
+    "sourceWidth": 719,
+    "face": [
+      386,
+      243
+    ],
+    "faceHeight": 234
+  },
+  {
+    "id": "pascal",
+    "side": "B",
+    "commons": "Blaise Pascal Versailles.JPG",
+    "sourceWidth": 1920,
+    "face": [
+      840,
+      720
+    ],
+    "faceHeight": 576
+  }
+]

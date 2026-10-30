@@ -1,0 +1,85 @@
+{
+  "question": "Is it better to be good, or effective?",
+  "model": "elevenlabs/eleven-v3",
+  "voices": {
+    "ref": "Jessica",
+    "A": "Daniel",
+    "B": "Bill"
+  },
+  "lines": [
+    {
+      "id": "l01",
+      "who": "ref",
+      "tag": "[intrigued]",
+      "text": "Is it better to be good, or to be effective? Two philosophers. You pick a side."
+    },
+    {
+      "id": "l02",
+      "who": "B",
+      "tag": "[warm, certain]",
+      "text": "Good. Doing wrong damages the only thing that's really you: your soul. Better to suffer injustice than to commit it."
+    },
+    {
+      "id": "l03",
+      "who": "ref",
+      "text": "His claim: doing wrong hurts the doer most."
+    },
+    {
+      "id": "l04",
+      "who": "A",
+      "tag": "[cool]",
+      "text": "Look at how people actually live, not how they should. A man who's good in every way is ruined among so many who aren't."
+    },
+    {
+      "id": "l05",
+      "who": "ref",
+      "text": "His claim: in a world that isn't good, pure goodness loses."
+    },
+    {
+      "id": "l06",
+      "who": "B",
+      "tag": "[sharp]",
+      "text": "Your prince lies, kills, breaks his word. He wins a city and loses himself."
+    },
+    {
+      "id": "l07",
+      "who": "A",
+      "tag": "[bitter]",
+      "text": "I served Florence's republic. Good men ran it. In 1512 it fell in weeks, and the winners tortured me. Goodness without force protects nobody.",
+      "say": "I served Florence's republic. Good men ran it. In fifteen-twelve it fell in weeks, and the winners tortured me. Goodness without force protects nobody."
+    },
+    {
+      "id": "l08",
+      "who": "ref",
+      "text": "He says power rots the soul. But a goodness that can't protect anyone isn't good enough. Point, Machiavelli."
+    },
+    {
+      "id": "l09",
+      "who": "B",
+      "tag": "[proud]",
+      "text": "Then I'll win the long game. Athens silenced me. Twenty-four centuries later, you're still quoting me."
+    },
+    {
+      "id": "l10",
+      "who": "A",
+      "tag": "[smug]",
+      "text": "So your goodness won by reputation. Results and appearances. That's my whole book."
+    },
+    {
+      "id": "l11",
+      "who": "ref",
+      "tag": "[excited]",
+      "text": "Socrates defended goodness by what it won. That's his rival's rule. Machiavelli wins."
+    },
+    {
+      "id": "l12",
+      "who": "ref",
+      "text": "So take what's useful for you. Socrates gives you the line you won't cross. Machiavelli shows you how others win by crossing it. Know your line. Know the game."
+    },
+    {
+      "id": "l13",
+      "who": "ref",
+      "text": "Which brings you back to the question."
+    }
+  ]
+}
