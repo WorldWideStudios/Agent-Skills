@@ -1,0 +1,24 @@
+[
+  {
+    "id": "machiavelli",
+    "side": "A",
+    "commons": "Portrait of Niccolò Machiavelli by Santi di Tito.jpg",
+    "sourceWidth": 1244,
+    "face": [
+      606,
+      327
+    ],
+    "faceHeight": 250
+  },
+  {
+    "id": "socrates",
+    "side": "B",
+    "commons": "Socrates Pio-Clementino Inv314.jpg",
+    "sourceWidth": 1300,
+    "face": [
+      650,
+      520
+    ],
+    "faceHeight": 700
+  }
+]

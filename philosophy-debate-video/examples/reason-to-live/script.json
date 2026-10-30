@@ -1,0 +1,85 @@
+{
+  "question": "Do you need a reason to live?",
+  "model": "elevenlabs/eleven-v3",
+  "voices": {
+    "ref": "Jessica",
+    "A": "Callum",
+    "B": "George"
+  },
+  "lines": [
+    {
+      "id": "l01",
+      "who": "ref",
+      "tag": "[intrigued]",
+      "text": "Do you need a reason to live? Two philosophers. You pick a side."
+    },
+    {
+      "id": "l02",
+      "who": "B",
+      "tag": "[earnest]",
+      "text": "Yes. Man is a reed that knows it will die. So we run to games, gossip, scrolling. I call it diversion. Only an infinite reason fills an infinite hole."
+    },
+    {
+      "id": "l03",
+      "who": "ref",
+      "text": "His claim: without a reason, life is just distraction from death."
+    },
+    {
+      "id": "l04",
+      "who": "A",
+      "tag": "[calm, dry]",
+      "text": "We demand meaning. The universe stays silent. That clash is the absurd. Don't escape it. Live inside it, eyes open."
+    },
+    {
+      "id": "l05",
+      "who": "ref",
+      "text": "His claim: there's no reason coming. Live anyway, without excuses."
+    },
+    {
+      "id": "l06",
+      "who": "B",
+      "tag": "[pressing]",
+      "text": "You're already on the boat. Refuse to bet, and you've bet. Stake one finite life, win infinity. Only a fool passes."
+    },
+    {
+      "id": "l07",
+      "who": "A",
+      "tag": "[cutting]",
+      "text": "Your wager is philosophical suicide. You kill the question to feel safe. Sisyphus has no hope, and still, the struggle itself is enough to fill a heart.",
+      "say": "Your wager is philosophical... You kill the question to feel safe. Sisyphus has no hope, and still, the struggle itself is enough to fill a heart."
+    },
+    {
+      "id": "l08",
+      "who": "ref",
+      "text": "He says not betting is losing. But hope is just one more diversion. Point, Camus."
+    },
+    {
+      "id": "l09",
+      "who": "B",
+      "tag": "[softly]",
+      "text": "Then forget proof. The heart has reasons reason cannot know."
+    },
+    {
+      "id": "l10",
+      "who": "A",
+      "tag": "[amused]",
+      "text": "Passion with no proof. That's the absurd hero."
+    },
+    {
+      "id": "l11",
+      "who": "ref",
+      "tag": "[excited]",
+      "text": "Pascal dropped proof to stay in the fight. That's Camus's rule. Camus wins."
+    },
+    {
+      "id": "l12",
+      "who": "ref",
+      "text": "So keep both. From Pascal: notice what you reach for when it's quiet. From Camus: you don't need an answer to push the rock. Stop running. Keep pushing."
+    },
+    {
+      "id": "l13",
+      "who": "ref",
+      "text": "Which brings you back to the question."
+    }
+  ]
+}
