@@ -1,0 +1,7 @@
+node_modules/
+out/
+vo-cache/
+public/vo/
+public/music/*.mp3
+public/*/*.jpg
+public/*/*.png

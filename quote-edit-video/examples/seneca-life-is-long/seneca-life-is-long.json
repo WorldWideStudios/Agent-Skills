@@ -1,0 +1,79 @@
+{
+ "title": "Life is long, if you know how to use it",
+ "voice": "aura-2-zeus-en",
+ "tempo": 0.9,
+ "lead": 0.3,
+ "tail": 3.2,
+ "lines": [
+  {
+   "id": "l01",
+   "gap": 0,
+   "text": "Your life is not short."
+  },
+  {
+   "id": "l02",
+   "gap": 0.47,
+   "text": "Most of us just spend it like it is."
+  },
+  {
+   "id": "l03",
+   "gap": 0.77,
+   "text": "Man fears a thousand storms, yet most of them never come."
+  },
+  {
+   "id": "l04",
+   "gap": 0.67,
+   "text": "He waits for tomorrow, yet tomorrow never promised him anything."
+  },
+  {
+   "id": "l05",
+   "gap": 0.67,
+   "text": "The happiest people are not the ones who have the most, but the ones who need the least and love what they have."
+  },
+  {
+   "id": "l06",
+   "gap": 0.77,
+   "text": "A man who lives each day as a complete life will never run out of time. Not in sorrow. Not in exile. Not in old age."
+  },
+  {
+   "id": "l07",
+   "gap": 0.67,
+   "text": "And so, he is far freer than the one who owns everything."
+  },
+  {
+   "id": "l08",
+   "gap": 0.77,
+   "text": "Nothing is easier than to postpone your life."
+  },
+  {
+   "id": "l09",
+   "gap": 0.47,
+   "text": "Nothing is more beautiful than to begin it now."
+  },
+  {
+   "id": "l10",
+   "gap": 0.67,
+   "text": "The line between a wasted life and a full one is not measured in years, but in hours well used."
+  },
+  {
+   "id": "l11",
+   "gap": 0.4,
+   "text": "Wherever there is a human being, there is a chance for kindness."
+  },
+  {
+   "id": "l12",
+   "gap": 0.67,
+   "text": "So do not wait to live."
+  },
+  {
+   "id": "l13",
+   "gap": 0.47,
+   "text": "Begin at once."
+  },
+  {
+   "id": "l14",
+   "gap": 0.87,
+   "text": "Life is long, if you know how to use it."
+  }
+ ]
+}

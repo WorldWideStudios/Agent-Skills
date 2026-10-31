@@ -8,6 +8,7 @@ to make video for our programmes. Each folder is one self-contained skill.
 | [`video-brand-guide/`](video-brand-guide/) | Build a video style guide from an organisation's website: tokens, one type scale for 16:9 and 9:16, card specs, motion/picture/sound rules, a Never list and a pre-render checklist — Markdown plus an illustrated HTML sheet. Includes a worked example. |
 | [`summary-video/`](summary-video/) | Cut a recorded group call into a 60–75s public summary video: ffmpeg scripts for finding and cutting lines, a Remotion template driven by one JSON beat table, and an original synthesised score that follows the cut. |
 | [`philosophy-debate-video/`](philosophy-debate-video/) | Make a vertical ~90s narrated debate between two philosophers on one question: three scored rounds on a balance, a winner decided by the turn, a takeaway from both. HyperFrames engine driven by one script and one content object, ElevenLabs voices via OpenRouter, public-domain portraits. Ships with two finished debates. |
+| [`quote-edit-video/`](quote-edit-video/) | Make a vertical 57s narrated quote edit of one philosopher in the dark-portrait style of the stoic quote accounts, turned hopeful: eye-slit portraits that open to full frame with slow eye pans, gold word-by-word captions, a black reset, the author's cut-out rising through a flicker montage and a burn flash on the beat. Remotion engine driven by one config per video, Aura-2 narration via OpenRouter, public-domain portraits. Ships with Marcus Aurelius and Seneca. |
 
 They work best together: make the brand guide first, then cut the video against it.
 
@@ -16,7 +17,7 @@ They work best together: make the brand guide first, then cut the video against 
 ```bash
 git clone https://github.com/WorldWideStudios/Agent-Skills.git
 mkdir -p ~/.claude/skills
-cp -R Agent-Skills/video-brand-guide Agent-Skills/summary-video Agent-Skills/philosophy-debate-video ~/.claude/skills/
+cp -R Agent-Skills/video-brand-guide Agent-Skills/summary-video Agent-Skills/philosophy-debate-video Agent-Skills/quote-edit-video ~/.claude/skills/
 ```
 
 Or copy a skill into a project's `.claude/skills/` to scope it to that project.
@@ -29,6 +30,7 @@ example.org", "cut a summary video of this call"), or start from
 - `ffmpeg` / `ffprobe`
 - Node 18+ (Remotion, HyperFrames)
 - Python 3 (stdlib only; Pillow for the debate portraits or checking a logo)
+- macOS with Xcode command line tools for the quote edit's face finder and cut-out (Vision)
 
 ## Notes
 
