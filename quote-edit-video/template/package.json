@@ -1,0 +1,20 @@
+{
+  "name": "quote-edit-video",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "remotion studio",
+    "render": "remotion render",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.503",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.503"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.4",
+    "typescript": "5.8.3"
+  }
+}

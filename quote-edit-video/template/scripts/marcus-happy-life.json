@@ -1,0 +1,79 @@
+{
+ "title": "Very little is needed to make a happy life",
+ "voice": "aura-2-zeus-en",
+ "tempo": 0.86,
+ "lead": 0.3,
+ "tail": 3.2,
+ "lines": [
+  {
+   "id": "l01",
+   "gap": 0,
+   "text": "Every morning is a gift."
+  },
+  {
+   "id": "l02",
+   "gap": 0.7,
+   "text": "Most of us just forget to open it."
+  },
+  {
+   "id": "l03",
+   "gap": 1.0,
+   "text": "Man complains of the night, yet the sun still rises for him."
+  },
+  {
+   "id": "l04",
+   "gap": 0.9,
+   "text": "He curses the obstacle, yet the obstacle becomes the way."
+  },
+  {
+   "id": "l05",
+   "gap": 0.9,
+   "text": "The strongest men are not the ones who never fall, but the ones who rise each morning to do the work of a human being."
+  },
+  {
+   "id": "l06",
+   "gap": 1.0,
+   "text": "A man who masters his own mind will find peace anywhere. In a palace. In a war tent. In a storm."
+  },
+  {
+   "id": "l07",
+   "gap": 0.9,
+   "text": "And so, he is far richer than the one who owns the world."
+  },
+  {
+   "id": "l08",
+   "gap": 1.0,
+   "text": "Nothing is easier than to blame the world."
+  },
+  {
+   "id": "l09",
+   "gap": 0.7,
+   "text": "Nothing is more powerful than to change your mind about it."
+  },
+  {
+   "id": "l10",
+   "gap": 0.9,
+   "text": "The line between a good day and a bad one is not drawn by fortune, but by your thoughts."
+  },
+  {
+   "id": "l11",
+   "gap": 0.6,
+   "text": "Your soul takes the color of your thoughts."
+  },
+  {
+   "id": "l12",
+   "gap": 0.9,
+   "text": "So do not wait for a better life."
+  },
+  {
+   "id": "l13",
+   "gap": 0.7,
+   "text": "Begin it today."
+  },
+  {
+   "id": "l14",
+   "gap": 1.1,
+   "text": "Very little is needed to make a happy life."
+  }
+ ]
+}
